@@ -18,3 +18,37 @@ OUTPUT:
 [24, Rajii, 4.5, 4.7, true, m]
 ==============================================
 ==============================================
+import java.util.ArrayList;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		ArrayList al = new ArrayList();
+		al.add("Rajii");
+		al.add(4.5f);
+		al.add(true);
+		al.add("Rajii");
+		System.out.println(al);	
+		
+		al.remove(true);
+		System.out.println(al);	
+		
+		System.out.println(al.indexOf("Rajii"));
+		System.out.println(al.lastIndexOf("Rajii"));
+		System.out.println(al.get(2));
+		System.out.println(al.contains(4.5f));
+		System.out.println(al.contains(4.5));
+		
+	}
+}
+--------------------------------------
+OUTPUT:
+[Rajii, 4.5, true, Rajii]
+[Rajii, 4.5, Rajii]
+0
+2
+Rajii
+true
+false
+==================================================================
+==================================================================
